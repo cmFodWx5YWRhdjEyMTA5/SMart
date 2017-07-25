@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/UploadToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:background="@drawable/rect_edit_text"
+        android:textColorHint="@color/gray"
+        android:padding="10dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dip"/>
+
+    <EditText
+        android:id="@+id/input_address"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/address"
+        android:inputType="textMultiLine"
+        android:background="@drawable/rect_edit_text"
+        android:textColorHint="@color/gray"
+        android:padding="10dip"
+        android:layout_marginBottom="10dip" />
+
+    <EditText
+        android:id="@+id/input_city"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/city"
+        android:maxLines="1"
+        android:inputType="text"
+        android:background="@drawable/rect_edit_text"
+        android:textColorHint="@color/gray"
+        android:padding="10dip"
+        android:layout_marginBottom="10dip" />
+
+    <EditText
+        android:id="@+id/input_pincode"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/pincode"
+        android:inputType="number"
+        android:maxLines="1"
+        android:background="@drawable/rect_edit_text"
+        android:textColorHint="@color/gray"
+        android:padding="10dip"
+        android:layout_marginBottom="10dip" />
+
+    <EditText
+        android:id="@+id/input_upload"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/upload"
+        android:background="@drawable/rect_edit_text"
+        android:textColorHint="@color/gray"
+        android:padding="10dip"
+        android:layout_marginBottom="10dip"
+        android:drawableRight="@drawable/ic_attach"
+        android:inputType="none"
+
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:background="@drawable/rect_edit_text"
+        android:textColorHint="@color/gray"
+        android:padding="10dip"
+        android:layout_marginBottom="10dip" />
+
+    <EditText
+        android:id="@+id/input_contact"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/contact"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:background="@drawable/rect_edit_text"
+        android:textColorHint="@color/gray"
+        android:padding="10dip"
+        android:layout_marginBottom="10dip" />
+
+
+    <EditText
+        android:id="@+id/input_coupon"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Enter Coupon Code"
+        android:inputType="text"
+        android:maxLines="1"
+        android:background="@drawable/rect_edit_text"
+        android:textColorHint="@color/gray"
+        android:padding="10dip"
+        android:layout_marginBottom="10dip" />
+
+
+    <EditText
+        android:id="@+id/input_comment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Enter Comment"
+        android:inputType="textMultiLine"
+        android:background="@drawable/rect_edit_text"
+        android:textColorHint="@color/gray"
+        android:padding="10dip"
+        android:layout_marginBottom="10dip" />
+
+
+
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="@string/submit"
+        android:layout_marginTop="20dp"
+        android:elevation="1dp"
+        />
+
+
+
+
+</LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/LLImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/IMAGE"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/medicalbanner"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/LLContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/LLImage"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/txtHowtoOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="How to order on \n Sahakar Mart"
+                android:textSize="10sp"
+                android:clickable="true"
+                android:background="#F50B16"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/txtContact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="About Us"
+                android:textSize="10sp"
+                android:clickable="true"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_first_row"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height"
+            android:baselineAligned="false"
+            android:layout_below="@id/LLContact"
+            android:weightSum="2.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/layout_background"
+                android:id="@+id/ll_first_first"
+                android:padding="5dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0"
+                android:layout_weight="1.0"
+                android:layout_marginRight="20dp"
+                style="@style/LinearLayout">
+                <ImageView
+                    android:layout_gravity="top"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tv_height"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/ic_uplaod_cyan"
+                    style="@style/ImageViewStyle" />
+
+                <TextView
+                    android:textSize="@dimen/primary_text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Prescription"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/layout_background"
+                android:id="@+id/ll_first_second"
+                android:padding="5dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0"
+                android:layout_weight="1.0"
+
+                style="@style/LinearLayout">
+
+                <ImageView
+                    android:layout_gravity="top"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tv_height"
+                    android:layout_weight="0.5"
+                    style="@style/ImageViewStyle"
+                    android:src="@drawable/ic_call_cyan"/>
+                <TextView android:textSize="@dimen/primary_text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Call Us \n"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_second_row"
+            android:layout_below="@id/ll_first_row"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height"
+            android:baselineAligned="false"
+            android:weightSum="2.0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/layout_background"
+                android:id="@+id/ll_second_first"
+                android:padding="5dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0"
+                android:layout_weight="1.0"
+                style="@style/LinearLayout"
+                android:layout_marginRight="20dp"
+               >
+
+                <ImageView
+                    android:layout_gravity="top"
+                    android:id="@+id/chek_req"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tv_height"
+                    android:layout_weight="0.5"
+                    style="@style/ImageViewStyle"
+                    android:src="@drawable/ic_format"/>
+                <TextView
+                    android:textSize="@dimen/primary_text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prescription Format"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/layout_background"
+                android:id="@+id/ll_second_second"
+                android:padding="5dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0"
+                android:layout_weight="1.0"
+                style="@style/LinearLayout"
+                >
+
+
+                <ImageView
+                    android:id="@+id/email_statement"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tv_height"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="top"
+                    style="@style/ImageViewStyle"
+                    android:src="@drawable/ic_public"/>
+                <TextView
+                    android:textSize="@dimen/primary_text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:text="Browse   Medicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                   />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_below="@id/ll_second_row">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/footerbanner"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>

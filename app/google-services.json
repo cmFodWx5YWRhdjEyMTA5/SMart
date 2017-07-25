@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1031357240692",
+    "firebase_url": "https://sahakar-mart.firebaseio.com",
+    "project_id": "sahakar-mart",
+    "storage_bucket": "sahakar-mart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031357240692:android:cb377ee21a9658e3",
+        "android_client_info": {
+          "package_name": "com.sahakarmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031357240692-tarkk7ao6e04f3ubtsjb8u5hb2pamkeq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCigwySHBT7Kc3PIwGqKGvb2LweIXenflY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

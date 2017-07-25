@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sahakarmart.Activity.Registration">
+
+
+
+    <ScrollView
+        android:id="@+id/RegScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/ll_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/registration"
+                android:textSize="@dimen/category_heading"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dip"/>
+
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/name_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/rect_edit_text"
+                android:padding="10dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="15dip"/>
+
+            <EditText
+                android:id="@+id/input_lname"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/lname_hint"
+                android:textColorHint="@color/gray"
+                android:inputType="text"
+                android:maxLines="1"
+                android:background="@drawable/rect_edit_text"
+                android:padding="10dip"
+                android:layout_marginBottom="10dip" />
+
+            <EditText
+                android:id="@+id/input_contact"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/contactnumber_hint"
+                android:inputType="number"
+                android:background="@drawable/rect_edit_text"
+                android:textColorHint="@color/gray"
+                android:padding="10dip"
+                android:layout_marginBottom="10dip" />
+
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:background="@drawable/rect_edit_text"
+                android:textColorHint="@color/gray"
+                android:padding="10dip"
+                android:layout_marginBottom="10dip"/>
+
+
+
+            <EditText
+                android:id="@+id/input_confirm_password"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/confirm_password_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:background="@drawable/rect_edit_text"
+                android:textColorHint="@color/gray"
+                android:padding="10dip"
+                android:layout_marginBottom="10dip"/>
+
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Email Id"
+                android:background="@drawable/rect_edit_text"
+                android:textColorHint="@color/gray"
+                android:padding="10dip"
+                android:layout_marginBottom="10dip"
+                android:inputType="textEmailAddress"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_Register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <AutoCompleteTextView
+                    android:id="@+id/autoComplete_City"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/city_hint"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:dropDownAnchor="@id/layout_Register"
+                    android:background="@drawable/rect_edit_text"
+                    android:textColorHint="@color/gray"
+                    android:padding="10dip"
+                    android:layout_marginBottom="10dip">
+
+                </AutoCompleteTextView>
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:text="@string/registration"
+                    android:layout_marginTop="20dp"
+                    android:elevation="1dp"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/registerProgress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignBottom="@+id/btn_register"
+                    android:layout_alignTop="@+id/btn_register"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminate="true"
+                    android:elevation="2dp"
+                    android:indeterminateTint="@color/white"
+                    android:visibility="gone" />
+               <!-- <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/txtPleaseLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already Registred ? Click Here to Login"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@id/btn_register"
+                    />-->
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

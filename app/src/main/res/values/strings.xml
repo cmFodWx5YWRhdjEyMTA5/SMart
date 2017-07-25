@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Sahakar Mart</string>
+    <string name="name">Enter Name</string>
+    <string name="address">Enter Address</string>
+    <string name="email">Enter Email-Id</string>
+    <string name="contact">Enter Mobile Number</string>
+    <string name="pincode">Enter Pincode</string>
+    <string name="upload">Upload Prescription</string>
+    <string name="city">Enter City</string>
+    <string name="submit">Submit</string>
+
+
+    <!--Hints for Registertaion Page-->
+    <string name="registration">Register</string>
+    <string name="Name">Name</string>
+    <string name="name_hint">First Name</string>
+    <string name="lname_hint">Last Name</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="change_password_hint">New Password</string>
+    <string name="change_confirm_password_hint">New Confirm Password</string>
+    <string name="contactnumber_hint">Mobile Number</string>
+    <string name="email_hint">Email-Id Or Mobile Number</string>
+    <string name="Email">Email-Id</string>
+    <string name="city_hint">City</string>
+    <string name="country_hint">Visa Country </string>
+
+    <string-array name="city_array">
+
+        <item>Ahmednagar</item>
+        <item>Akola</item>
+        <item>Amravati</item>
+        <item>Aurangabad</item>
+        <item>Beed</item>
+        <item>Bhandara</item>
+        <item>Buldhana</item>
+        <item>Chandrapur</item>
+        <item>Dhule</item>
+        <item>Gadchiroli</item>
+        <item>Gondia</item>
+        <item>Hingoli</item>
+        <item>Jalgaon</item>
+        <item>Jalna</item>
+        <item>Kolhapur</item>
+        <item>Latur</item>
+        <item>Mumbai City</item>
+        <item>Nagpur</item>
+        <item>Nanded</item>
+        <item>Nandurbar</item>
+        <item>Nashik</item>
+        <item>Osmanabad</item>
+        <item>Palghar</item>
+        <item>Parbhani</item>
+        <item>Pune</item>
+        <item>Palghar</item>
+        <item>Raigad</item>
+        <item>Ratnagiri</item>
+        <item>Sangli</item>
+        <item>Satara</item>
+        <item>Sindhudurg</item>
+        <item>Solapur</item>
+        <item>Thane</item>
+        <item>Wardha</item>
+        <item>Washim</item>
+        <item>Yavatmal</item>
+    </string-array>
+
+
+</resources>
